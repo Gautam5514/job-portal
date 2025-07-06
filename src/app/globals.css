@@ -1,0 +1,101 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Remove explicit body font-family to allow Inter from layout.jsx to take precedence */
+/*
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+*/
+
+.collapse{
+  visibility:visible;
+} 
+
+@layer base {
+  :root {
+    /* Light Theme Colors - Keeping existing well-defined theme */
+    --background: 0 0% 98%; /* Slightly lighter than default for a brighter feel */
+    --foreground: 0 0% 4%; 
+    --card: 0 0% 100%; 
+    --card-foreground: 0 0% 4%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 4%;
+    --primary: 233 65% 30%; 
+    --primary-foreground: 0 0% 98%; 
+    --secondary: 0 0% 94%; /* Adjusted secondary for subtle contrast */
+    --secondary-foreground: 0 0% 9%; 
+    --muted: 0 0% 90%; 
+    --muted-foreground: 0 0% 45%;
+    --accent: 180 100% 25%; 
+    --accent-foreground: 0 0% 98%; 
+    --destructive: 0 84% 60%; 
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89%; /* Slightly softer border */
+    --input: 0 0% 92%; /* Input background slightly different  from muted */
+    --ring: 233 65% 50%; 
+    --chart-1: 180 100% 25%; 
+    --chart-2: 233 65% 50%; 
+    --chart-3: 180 50% 50%;  
+    --chart-4: 233 40% 60%; 
+    --chart-5: 0 0% 60%;    
+    --radius: 0.5rem;
+
+    --sidebar-background: 233 65% 25%; 
+    --sidebar-foreground: 0 0% 98%; 
+    --sidebar-primary: 180 100% 35%; 
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 233 65% 40%; 
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 233 65% 35%;
+    --sidebar-ring: 180 100% 45%;
+  }
+
+  .dark {
+    --background: 233 30% 10%; 
+    --foreground: 0 0% 98%; 
+    --card: 233 30% 15%; 
+    --card-foreground: 0 0% 98%;
+    --popover: 233 30% 10%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 233 65% 60%; 
+    --primary-foreground: 0 0% 9%; 
+    --secondary: 233 30% 18%; /* Dark mode secondary adjusted */
+    --secondary-foreground: 0 0% 98%;
+    --muted: 233 30% 22%; /* Dark mode muted adjusted */
+    --muted-foreground: 0 0% 65%;
+    --accent: 180 100% 35%; 
+    --accent-foreground: 0 0% 9%; 
+    --destructive: 0 63% 40%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 233 30% 28%; /* Dark mode border adjusted */
+    --input: 233 30% 25%;
+    --ring: 233 65% 70%; 
+    --chart-1: 180 100% 35%; 
+    --chart-2: 233 65% 60%; 
+    --chart-3: 180 50% 60%;  
+    --chart-4: 233 40% 70%; 
+    --chart-5: 0 0% 70%;    
+
+    --sidebar-background: 233 30% 10%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 180 100% 40%;
+    --sidebar-primary-foreground: 0 0% 9%;
+    --sidebar-accent: 233 30% 25%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 233 30% 20%;
+    --sidebar-ring: 180 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    /* Ensure Inter font from layout.jsx is effectively applied */
+  }
+}

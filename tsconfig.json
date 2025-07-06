@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "noEmit": true,
+    "incremental": true,
+    "module": "esnext",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+     "paths": {
+      "@/*": ["./src/*"]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "strictNullChecks": true
+  },
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx"
+, "src/components/resume-builder/templates/ElegantTemplate.jsx", "src/components/resume-builder/templates/CreativeTemplate.jsx", "src/components/resume-builder/templates/ColorfulTemplate.jsx", "src/components/resume-builder/templates/ClassicTemplate.jsx", "src/components/resume-builder/templates/BusinessTemplate.jsx", "src/app/res/page.jsx", "src/pages/NotFound.jsx", "src/pages/Index.jsx", "src/hooks/use-mobile.jsx", "src/components/TemplateSelector.jsx", "src/components/ResumePreview.jsx", "src/components/DownloadButton.jsx", "src/components/DataInput.jsx", "src/components/resume-builder/templates/ModernTemplate.jsx", "src/components/resume-builder/templates/MinimalTemplate.jsx"  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
