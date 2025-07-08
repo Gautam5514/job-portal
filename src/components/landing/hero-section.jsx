@@ -13,7 +13,7 @@ export function HeroSection() {
             Elevate Your Career with AI-Powered Profile Polishing
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-10">
-            Get expert analysis on your resume and LinkedIn profile, and build a standout resume with our intelligent tools. Prepex helps you make the best first impression.
+            Get expert analysis on your resume and LinkedIn profile, and build a standout resume with our intelligent tools. Career Genius helps you make the best first impression.
           </p>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
             <Button asChild size="lg" className="shadow-lg hover:shadow-xl transition-shadow duration-300">

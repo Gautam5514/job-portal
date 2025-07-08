@@ -7,7 +7,7 @@ const RefundPolicy = () => {
 
       <div className="space-y-6 text-sm md:text-base leading-relaxed">
         <p>
-          At <strong className="font-semibold">PrepX (owned and operated by Pooja Agrawal)</strong>, we offer subscription-based services designed to support your growth and transformation. We value your commitment and strive to provide clarity and fairness in all our policies.
+          At <strong className="font-semibold">Career Genius (owned and operated by Pooja Agrawal)</strong>, we offer subscription-based services designed to support your growth and transformation. We value your commitment and strive to provide clarity and fairness in all our policies.
         </p>
 
         <h2 className="text-xl font-semibold mt-4">1. Subscription Refunds</h2>

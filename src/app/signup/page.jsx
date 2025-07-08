@@ -103,10 +103,10 @@ function SignupForm() {
     <Card className="w-full max-w-md shadow-xl rounded-xl">
       <CardHeader className="text-center p-6 sm:p-8">
          <Link href="/" className="inline-block mb-6">
-           <Image src="/assets/img/prepex.png" alt="Prepex Logo" width={56} height={56} className="mx-auto" />
+           <Image src="/assets/img/prepex.png" alt="Career Genius Logo" width={56} height={56} className="mx-auto" />
          </Link>
         <CardTitle className="text-3xl font-bold text-primary">Create Your Account</CardTitle>
-        <CardDescription className="mt-1 text-muted-foreground">Join Prepex and elevate your career.</CardDescription>
+        <CardDescription className="mt-1 text-muted-foreground">Join Career Genius and elevate your career.</CardDescription>
       </CardHeader>
       <CardContent className="space-y-6 p-6 sm:p-8">
         {error && (

@@ -899,7 +899,7 @@ export function LinkedInAnalysis() {
         <p className="text-xs text-muted-foreground text-center w-full">
           AI analysis provides suggestions based on common best practices.
           Review and tailor the feedback to your specific goals and industry.
-          Prepex is not responsible for job application outcomes.
+          Career Genius is not responsible for job application outcomes.
         </p>
       </CardFooter>
     </div>

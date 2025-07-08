@@ -27,7 +27,7 @@ export default function ResumeAuditPage() {
   return (
     <>
       <Head>
-        <title>Resume Audit - Prepex</title>
+        <title>Resume Audit - Career Genius</title>
         <meta name="description" content="Get an AI-powered audit of your resume to identify strengths, weaknesses, and areas for improvement." />
       </Head>
 

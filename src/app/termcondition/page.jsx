@@ -43,7 +43,7 @@ const TermsAndConditions = () => {
 
         <h2 className="text-xl font-semibold">6. Intellectual Property</h2>
         <p>
-          All content, designs, and code are the intellectual property of PrepX (owned and operated by Pooja Agrawal) . Reproduction or misuse is strictly prohibited.
+          All content, designs, and code are the intellectual property of Career Genius (owned and operated by Pooja Agrawal) . Reproduction or misuse is strictly prohibited.
         </p>
 
         <h2 className="text-xl font-semibold">7. Third-Party Integrations</h2>

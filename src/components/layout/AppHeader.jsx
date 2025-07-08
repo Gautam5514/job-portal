@@ -80,7 +80,7 @@ export default function AppHeader() {
     <header className="sticky top-0 z-50 w-full border-b py-2 bg-background shadow-sm">
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2 text-lg font-semibold text-primary hover:text-primary/90 transition-colors">
-          <Image src="/assets/img/prepex.png" alt="Prepex Logo" width={36} height={36} className="h-9 w-auto" />
+          <Image src="/assets/img/prepex.png" alt="Career Genius Logo" width={36} height={36} className="h-9 w-auto" />
           <span className="hidden sm:inline-block"></span>
         </Link>
 
@@ -273,8 +273,8 @@ export default function AppHeader() {
               <SheetContent side="right" className="w-[280px] p-4">
                 <div className="flex flex-col space-y-3">
                   <Link href="/" className="flex items-center gap-2 text-lg font-semibold text-primary mb-4" onClick={() => setMobileMenuOpen(false)}>
-                     <Image src="/assets/img/prepex.png" alt="Prepex Logo" width={32} height={32} />
-                     <span>Prepex</span>
+                     <Image src="/assets/img/prepex.png" alt="Career Genius Logo" width={32} height={32} />
+                     <span>Career Genius</span>
                   </Link>
                   
                   {/* AI Tools in Mobile */}

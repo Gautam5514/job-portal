@@ -108,6 +108,7 @@ const CreateJobPage = () => {
     toast.dismiss();
     if (imageUrl) {
       setJob((prev) => ({ ...prev, companyLogo: imageUrl }));
+      console.log("Updated job state with logo:", imageUrl);
       toast.success("Logo uploaded!");
     } else {
       toast.error("Logo upload failed!");
@@ -128,6 +129,8 @@ const CreateJobPage = () => {
       } else {
         await addDoc(collection(db, "jobs"), job);
         toast.success("Job posted successfully!");
+        console.log("Job being posted:", job);
+
       }
       setJob(initialState);
       setEditingJobId(null);
@@ -144,7 +147,7 @@ const CreateJobPage = () => {
     setEditingJobId(jobToEdit.id);
     window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to top for editing
   };
-  
+
   const handleDelete = async (id) => {
     if (!window.confirm("Are you sure you want to delete this job?")) return;
     try {
@@ -171,7 +174,7 @@ const CreateJobPage = () => {
           <ArrowLeft size={16} />
           Back to Dashboard
         </Link>
-        
+
         {/* --- Job Form Section --- */}
         <Card className="mb-12 shadow-lg">
           <CardHeader>
@@ -182,63 +185,185 @@ const CreateJobPage = () => {
             <CardDescription>Fill out the details below to post or update a job.</CardDescription>
           </CardHeader>
           <CardContent>
-            <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-8">
+            <form
+              onSubmit={handleSubmit}
+              className="grid grid-cols-1 md:grid-cols-2 gap-8 bg-white shadow-md rounded-xl p-6 border border-gray-200"
+            >
+              {/* Company Name */}
               <div className="space-y-2">
-                <Label htmlFor="companyName">Company Name</Label>
-                <Input id="companyName" name="companyName" value={job.companyName} onChange={handleChange} required />
+                <Label htmlFor="companyName" className="text-sm font-medium text-gray-700">
+                  Company Name
+                </Label>
+                <Input
+                  id="companyName"
+                  name="companyName"
+                  value={job.companyName}
+                  onChange={handleChange}
+                  required
+                  className="rounded-md"
+                />
               </div>
+
+              {/* Role */}
               <div className="space-y-2">
-                <Label htmlFor="role">Role / Job Title</Label>
-                <Input id="role" name="role" value={job.role} onChange={handleChange} required />
+                <Label htmlFor="role" className="text-sm font-medium text-gray-700">
+                  Role / Job Title
+                </Label>
+                <Input
+                  id="role"
+                  name="role"
+                  value={job.role}
+                  onChange={handleChange}
+                  required
+                  className="rounded-md"
+                />
               </div>
+
+              {/* Description */}
               <div className="space-y-2 md:col-span-2">
-                <Label htmlFor="description">Job Description</Label>
-                <Textarea id="description" name="description" rows={5} value={job.description} onChange={handleChange} required />
+                <Label htmlFor="description" className="text-sm font-medium text-gray-700">
+                  Job Description
+                </Label>
+                <Textarea
+                  id="description"
+                  name="description"
+                  rows={5}
+                  value={job.description}
+                  onChange={handleChange}
+                  required
+                  className="rounded-md"
+                />
               </div>
+
+              {/* Skills */}
               <div className="space-y-2">
-                <Label htmlFor="skills">Skills (comma-separated)</Label>
-                <Input id="skills" name="skills" value={job.skills} onChange={handleChange} placeholder="e.g., React, Node.js, SQL" required />
+                <Label htmlFor="skills" className="text-sm font-medium text-gray-700">
+                  Skills (comma-separated)
+                </Label>
+                <Input
+                  id="skills"
+                  name="skills"
+                  value={job.skills}
+                  onChange={handleChange}
+                  placeholder="e.g., React, Node.js, SQL"
+                  required
+                  className="rounded-md"
+                />
               </div>
+
+              {/* Package */}
               <div className="space-y-2">
-                <Label htmlFor="package">Package / Salary</Label>
-                <Input id="package" name="package" value={job.package} onChange={handleChange} placeholder="e.g., $100k - $120k" required />
+                <Label htmlFor="package" className="text-sm font-medium text-gray-700">
+                  Package / Salary
+                </Label>
+                <Input
+                  id="package"
+                  name="package"
+                  value={job.package}
+                  onChange={handleChange}
+                  placeholder="e.g., $100k - $120k"
+                  required
+                  className="rounded-md"
+                />
               </div>
+
+              {/* Location */}
               <div className="space-y-2">
-                <Label htmlFor="location">Location</Label>
-                <Input id="location" name="location" value={job.location} onChange={handleChange} placeholder="e.g., San Francisco, CA or Remote" required />
+                <Label htmlFor="location" className="text-sm font-medium text-gray-700">
+                  Location
+                </Label>
+                <Input
+                  id="location"
+                  name="location"
+                  value={job.location}
+                  onChange={handleChange}
+                  placeholder="e.g., San Francisco, CA or Remote"
+                  required
+                  className="rounded-md"
+                />
               </div>
+
+              {/* Apply Link */}
               <div className="space-y-2">
-                <Label htmlFor="applyLink">Apply Link</Label>
-                <Input id="applyLink" type="url" name="applyLink" value={job.applyLink} onChange={handleChange} required />
+                <Label htmlFor="applyLink" className="text-sm font-medium text-gray-700">
+                  Apply Link
+                </Label>
+                <Input
+                  id="applyLink"
+                  type="url"
+                  name="applyLink"
+                  value={job.applyLink}
+                  onChange={handleChange}
+                  required
+                  className="rounded-md"
+                />
               </div>
+
+              {/* Company Logo Upload */}
               <div className="space-y-2">
-                <Label htmlFor="companyLogo">Company Logo</Label>
-                <Input id="companyLogo" type="file" accept="image/*" onChange={handleLogoChange} className="file:text-blue-600 file:font-semibold" />
-                {job.companyLogo && <img src={job.companyLogo} alt="Logo Preview" className="h-16 w-16 mt-2 rounded-full object-cover" />}
+                <Label htmlFor="companyLogo" className="text-sm font-medium text-gray-700">
+                  Company Logo
+                </Label>
+                <Input
+                  id="companyLogo"
+                  type="file"
+                  accept="image/*"
+                  onChange={handleLogoChange}
+                  className="file:text-blue-600 file:font-medium"
+                />
+                {job.companyLogo && (
+                  <div className="mt-2 w-20 h-20 rounded-lg overflow-hidden border border-gray-300">
+                    <img
+                      src={job.companyLogo}
+                      alt="Company Logo"
+                      className="object-cover w-full h-full"
+                    />
+                  </div>
+                )}
               </div>
+
+              {/* Submit & Cancel */}
               <div className="md:col-span-2 flex items-center gap-4 pt-4">
-                <Button type="submit" size="lg" disabled={isSubmitting}>
-                  {isSubmitting ? "Submitting..." : (editingJobId ? "Update Job" : "Post Job")}
+                <Button
+                  type="submit"
+                  size="lg"
+                  disabled={isSubmitting}
+                  className="bg-blue-600 hover:bg-blue-700 text-white"
+                >
+                  {isSubmitting
+                    ? "Submitting..."
+                    : editingJobId
+                      ? "Update Job"
+                      : "Post Job"}
                 </Button>
                 {editingJobId && (
-                  <Button type="button" variant="outline" size="lg" onClick={cancelEdit}>Cancel</Button>
+                  <Button
+                    type="button"
+                    variant="outline"
+                    size="lg"
+                    onClick={cancelEdit}
+                    className="border-gray-300"
+                  >
+                    Cancel
+                  </Button>
                 )}
               </div>
             </form>
+
           </CardContent>
         </Card>
-        
+
         {/* --- Job List Section --- */}
         <div>
           <h2 className="text-3xl font-bold text-gray-800 mb-6 flex items-center gap-2">
-            <Briefcase size={28}/>
+            <Briefcase size={28} />
             Manage Existing Jobs ({jobs.length})
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {jobs.map((j) => (
               <Card key={j.id} className="flex flex-col">
                 <CardHeader className="flex-row items-start gap-4">
-                  {j.companyLogo && <img src={j.companyLogo} alt="Logo" className="w-14 h-14 rounded-full object-cover border"/>}
+                  {j.companyLogo && <img src={j.companyLogo} alt="Logo" className="w-14 h-14 rounded-full object-cover border" />}
                   <div>
                     <CardTitle>{j.role}</CardTitle>
                     <CardDescription>{j.companyName} • {j.location}</CardDescription>

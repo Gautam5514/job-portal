@@ -7,7 +7,7 @@ const PricingPolicy = () => {
 
       <div className="space-y-6 text-sm md:text-base leading-relaxed">
         <p>
-          At <strong className="font-semibold">PrepX (owned and operated by Pooja Agrawal)</strong>, our pricing is designed to be clear, transparent, and fair. This policy outlines how we present and manage the pricing of our subscription-based services.
+          At <strong className="font-semibold">Career Genius (owned and operated by Pooja Agrawal)</strong>, our pricing is designed to be clear, transparent, and fair. This policy outlines how we present and manage the pricing of our subscription-based services.
         </p>
 
         <h2 className="text-xl font-semibold mt-4">1. Pricing Structure</h2>

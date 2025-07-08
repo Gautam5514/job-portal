@@ -179,7 +179,7 @@ export default function PricingPage() {
         key: orderData.razorpayKeyId,
         amount: orderData.amount,
         currency: orderData.currency,
-        name: 'Prepex',
+        name: 'Career Genius',
         description: `Payment for ${plan.name} Plan`,
         image: '/logo.png', // Replace with your actual logo
         order_id: orderData.orderId,
@@ -259,8 +259,8 @@ export default function PricingPage() {
   return (
     <>
       <Head>
-        <title>Pricing Plans - Prepex</title>
-        <meta name="description" content="Choose the perfect plan to boost your job search with Prepex's AI tools." />
+        <title>Pricing Plans - Career Genius</title>
+        <meta name="description" content="Choose the perfect plan to boost your job search with Career Genius's AI tools." />
       </Head>
 
       <section className="py-16 md:py-24 bg-gradient-to-br from-primary/10 via-background to-secondary/20 text-center">

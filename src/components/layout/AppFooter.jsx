@@ -11,8 +11,8 @@ export default function AppFooter() {
           {/* About Section */}
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2 mb-2">
-              <Image src="/assets/img/prepex.png" alt="Prepex Logo" width={24} height={16} />
-              <span className="text-lg font-semibold text-primary">Prepex</span>
+              <Image src="/assets/img/prepex.png" alt="Career Genius Logo" width={24} height={16} />
+              <span className="text-lg font-semibold text-primary">Career Genius</span>
             </Link>
             <p className="text-sm text-muted-foreground">
               AI-powered tools to help you land your dream job. Optimize your resume, enhance your LinkedIn, and more.
@@ -64,7 +64,7 @@ export default function AppFooter() {
         </div>
 
         <div className="mt-10 pt-8 border-t border-border/60 text-center text-xs text-muted-foreground">
-          &copy; {new Date().getFullYear()} Prepex. All rights reserved. Built with Next.js & Genkit.
+          &copy; {new Date().getFullYear()} Career Genius. All rights reserved. Built with Next.js & Genkit.
         </div>
       </div>
     </footer>

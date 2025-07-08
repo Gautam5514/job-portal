@@ -43,7 +43,7 @@ export function FeaturesSection() {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-            Unlock Your Potential with Prepex
+            Unlock Your Potential with Career Genius
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Our suite of tools is designed to help you present the best version of yourself to potential employers.

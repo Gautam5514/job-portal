@@ -7,7 +7,7 @@ const ShippingPolicy = () => {
 
       <div className="space-y-6 text-sm md:text-base leading-relaxed">
         <p>
-          <strong className="font-semibold">PrepX (owned and operated by Pooja Agrawal)</strong> is a subscription-based service platform offering digital content and coaching solutions. As such, no physical shipping is involved in the delivery of our services.
+          <strong className="font-semibold">Career Genius (owned and operated by Pooja Agrawal)</strong> is a subscription-based service platform offering digital content and coaching solutions. As such, no physical shipping is involved in the delivery of our services.
         </p>
 
         <h2 className="text-xl font-semibold mt-4">1. Digital Delivery</h2>
@@ -23,7 +23,7 @@ const ShippingPolicy = () => {
 
         <h2 className="text-xl font-semibold mt-4">3. No Physical Shipments</h2>
         <p>
-          PrepX does not offer or ship any physical products. If a user expects tangible goods, they should contact us before completing their purchase to clarify the nature of the service.
+          Career Genius does not offer or ship any physical products. If a user expects tangible goods, they should contact us before completing their purchase to clarify the nature of the service.
         </p>
 
         <h2 className="text-xl font-semibold mt-4">4. Support & Delivery Issues</h2>

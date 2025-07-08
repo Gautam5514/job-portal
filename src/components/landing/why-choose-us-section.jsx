@@ -43,7 +43,7 @@ export function WhyChooseUsSection() {
             Gain The Professional Edge
           </h2>
           <p className="text-lg text-muted-foreground max-w-xl mx-auto">
-            Discover why Prepex is the smart choice for your career advancement.
+            Discover why Career Genius is the smart choice for your career advancement.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

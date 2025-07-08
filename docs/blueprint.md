@@ -1,4 +1,4 @@
-# **App Name**: Prepex
+# **App Name**: Career Genius
 
 ## Core Features:
 

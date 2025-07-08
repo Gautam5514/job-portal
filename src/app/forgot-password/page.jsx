@@ -43,7 +43,7 @@ export default function ForgotPasswordPage() {
       <Card className="w-full max-w-md shadow-xl rounded-xl">
         <CardHeader className="text-center p-6 sm:p-8">
           <Link href="/" className="inline-block mb-6">
-             <Image src="/assets/img/prepex.png" alt="Prepex Logo" width={56} height={56} className="mx-auto" />
+             <Image src="/assets/img/prepex.png" alt="Career Genius Logo" width={56} height={56} className="mx-auto" />
           </Link>
           <CardTitle className="text-3xl font-bold text-primary">Forgot Your Password?</CardTitle>
           <CardDescription className="mt-1 text-muted-foreground">

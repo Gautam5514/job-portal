@@ -11,7 +11,7 @@ import Script from 'next/script';
 const inter = Inter({ subsets: ['latin'] });
 
 // export const metadata = { 
-//   title: 'Prepex - AI-Powered Career Tools',
+//   title: 'Career Genius - AI-Powered Career Tools',
 //   description: 'Optimize your resume, enhance your LinkedIn, track jobs, and ace interviews with our AI-driven platform.',
 // };
 
@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={inter.className}>
       <head>
-        <title>Prepex - AI-Powered Career Tools</title>
+        <title>Career Genius - AI-Powered Career Tools</title>
         <meta name="description" content="Optimize your resume, enhance your LinkedIn, track jobs, and ace interviews with our AI-driven platform." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="shortcut icon" href="/assets/img/favicon.ico" />
@@ -64,7 +64,7 @@ export default function RootLayout({ children }) {
                   <div className="col-lg-6 col-sm-6">
                     <div className="f_widget f_about_widget wow fadeInUp" data-wow-delay="0.2s">
                       <a href="#" className="f_logo"><img className="h-12" src="/assets/img/logowhite.png" alt="" /></a>
-                      <p>Prepex is all in one home for career tools. Ai powered boost to help you land your dream job</p>
+                      <p>Career Genius is all in one home for career tools. Ai powered boost to help you land your dream job</p>
                       <ul className="list-unstyled f_social_icon">
                         <li><a href="#"><i className="ti-facebook"></i></a></li>
                         <li><a href="#"><i className="ti-twitter-alt"></i></a></li>
@@ -119,7 +119,7 @@ export default function RootLayout({ children }) {
                 <div className="footer_bottom text-center">
                   <div className="row">
                     <div className="col-lg-12">
-                      <p className="mb-0 wow fadeInUp" data-wow-delay="0.4s">© Copyright 2024, All Rights Reserved by Prepex</p>
+                      <p className="mb-0 wow fadeInUp" data-wow-delay="0.4s">© Copyright 2024, All Rights Reserved by Career Genius</p>
                     </div>
                   </div>
                 </div>

@@ -7,7 +7,7 @@ const AboutPage = () => {
       <div className="max-w-6xl mx-auto space-y-12">
         {/* Header */}
         <div className="text-center">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-blue-700 mb-4">About Prepex</h1>
+          <h1 className="text-4xl md:text-5xl font-extrabold text-blue-700 mb-4">About Career Genius</h1>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
             Helping job seekers create standout resumes, analyze skills, and discover tailored job opportunities.
           </p>

@@ -28,7 +28,7 @@ export default function LinkedInAuditPage() {
   return (
     <>
       <Head>
-        <title>LinkedIn Profile Analysis - Prepex</title>
+        <title>LinkedIn Profile Analysis - Career Genius</title>
         <meta name="description" content="Get an AI-powered analysis of your LinkedIn profile to optimize it for success." />
       </Head>
 

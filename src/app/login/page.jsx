@@ -83,10 +83,10 @@ export default function LoginPage() {
          {/* <Button onClick={() => toast({ title: "Toast Test", description: "It works!" })}>Test Toast</Button> */}
         <CardHeader className="text-center px-4 py-4 sm:p-8">
           <Link href="/" className="inline-block mb-6">
-            <Image src="/assets/img/prepex.png" alt="Prepex Logo" width={56} height={56} className="h-9 w-auto mx-auto" />
+            <Image src="/assets/img/prepex.png" alt="Career Genius Logo" width={56} height={56} className="h-9 w-auto mx-auto" />
           </Link>
           <CardTitle className="text-3xl font-bold">Welcome Back!</CardTitle>
-          <CardDescription className="mt-1 text-muted-foreground">Sign in to access your Prepx account.</CardDescription>
+          <CardDescription className="mt-1 text-muted-foreground">Sign in to access your Career Genius account.</CardDescription>
         </CardHeader>
         <CardContent className="space-y-2 px-6 py-2 sm:p-8">
           {error &&  (

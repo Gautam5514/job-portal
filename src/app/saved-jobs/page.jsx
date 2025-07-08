@@ -17,7 +17,7 @@ const SavedJobs = () => {
   
 
 useEffect(() => {
-  if (loading) return; // don't do anything if auth is still loading
+  if (loading) return;
 
   const fetchSavedJobs = async () => {
     if (!user) {
@@ -32,7 +32,16 @@ useEffect(() => {
 
       if (userSnap.exists()) {
         const data = userSnap.data();
-        setSavedJobs(data.savedJobs || []);
+        const savedJobIds = data.savedJobs || [];
+
+        const jobPromises = savedJobIds.map(async (jobId) => {
+          const jobDoc = await getDoc(doc(db, "jobs", jobId));
+          return jobDoc.exists() ? { id: jobDoc.id, ...jobDoc.data() } : null;
+        });
+
+        const jobs = await Promise.all(jobPromises);
+        const filteredJobs = jobs.filter(Boolean); // Remove nulls
+        setSavedJobs(filteredJobs);
       }
     } catch (err) {
       console.error("Failed to fetch saved jobs:", err);
@@ -42,6 +51,7 @@ useEffect(() => {
 
   fetchSavedJobs();
 }, [loading, user, router]);
+
 
 
   const handleApply = (job) => {

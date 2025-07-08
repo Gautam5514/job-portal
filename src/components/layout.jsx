@@ -11,7 +11,7 @@ export function AppLayout({ children }) {
           <div className="flex items-center"> {/* Group Logo and Title */}
              <Link href="/" className="flex items-center mr-6"> {/* Link the logo/title to home */}
                 <Briefcase className="h-6 w-6 mr-2 text-primary" />
-                <span className="font-bold text-lg text-primary">Prepex</span>
+                <span className="font-bold text-lg text-primary">Career Genius</span>
             </Link>
           </div>
 
@@ -42,7 +42,7 @@ export function AppLayout({ children }) {
       <footer className="py-6 md:px-8 md:py-0 border-t bg-secondary">
          <div className="container flex flex-col items-center justify-center gap-4 md:h-20 md:flex-row">
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-            Built with Next.js & Genkit. &copy; {new Date().getFullYear()} Prepex.
+            Built with Next.js & Genkit. &copy; {new Date().getFullYear()} Career Genius.
           </p>
         </div>
       </footer>

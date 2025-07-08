@@ -149,7 +149,7 @@ export function ResumeAudit() {
         setError("Please upload a PDF file.");
         setSelectedFile(null);
         setFileName("");
-       toast.error("Invalid file type. Please upload a PDF file.");
+      toast.error("Invalid file type. Please upload a PDF file.");
       }
     }
   };
@@ -275,91 +275,7 @@ export function ResumeAudit() {
     <div className="w-full rounded-lg overflow-hidden">
       <Toaster/>
       <div className="pt-0">
-        {/* <div className="w-full max-w-lg mx-auto  rounded-xl mb-8">
-            <div className="p-6 text-center">
-                <FileText className="h-12 w-12 text-primary mx-auto mb-3 opacity-80" />
-                <h2 className="text-2xl font-semibold">Upload Your Resume</h2>
-                <p className="text-muted-foreground">Get instant AI-powered feedback. PDF format only.</p>
-            </div>
-            <CardContent className="p-6 pt-2">
-                <form onSubmit={handleSubmit} className="space-y-6">
-                    <div className="relative border-2 border-dashed border-border rounded-lg p-6 text-center group hover:border-primary transition-colors duration-200 ease-in-out">
-                        <input
-                            id="resume-upload"
-                            type="file"
-                            accept="application/pdf"
-                            onChange={handleFileChange}
-                            className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
-                            disabled={isLoading}
-                        />
-                        <div className="flex flex-col items-center justify-center space-y-2">
-                            {!selectedFile && !isLoading && (
-                            <>
-                                <div className="p-3 bg-secondary rounded-full group-hover:bg-primary/10 transition-colors duration-200">
-                                <Upload className="h-8 w-8 text-muted-foreground group-hover:text-primary transition-colors duration-200" />
-                                </div>
-                                <p className="text-sm font-medium text-foreground">
-                                <span className="text-primary font-semibold">
-                                    Click to upload
-                                </span>
-                                 {' '}or drag & drop PDF
-                                </p>
-                                <p className="text-xs text-muted-foreground">
-                                PDF only (MAX. 5MB)
-                                </p>
-                            </>
-                            )}
-
-                            {selectedFile && !isLoading && (
-                            <>
-                                <div className="p-3 bg-green-100 dark:bg-green-700/30 rounded-full">
-                                <CheckCircle className="h-8 w-8 text-green-600 dark:text-green-400" />
-                                </div>
-                                <p className="text-sm font-medium text-foreground">
-                                Selected: <span className="font-semibold">{fileName}</span>
-                                </p>
-                                <button
-                                type="button"
-                                onClick={handleRemoveFile}
-                                className="text-xs text-red-500 hover:text-red-700 dark:hover:text-red-400 font-medium mt-1"
-                                aria-label="Remove selected file"
-                                >
-                                Change file
-                                </button>
-                            </>
-                            )}
-
-                            {isLoading && (
-                            <div className="flex flex-col items-center justify-center space-y-3">
-                                <Loader2 className="h-8 w-8 animate-spin text-primary" />
-                                <p className="text-sm font-medium text-foreground">
-                                Analyzing...
-                                </p>
-                                <p className="text-xs text-muted-foreground">
-                                {fileName}
-                                </p>
-                            </div>
-                            )}
-                        </div>
-                    </div>
-                    <div className="pt-2">
-                        <Button
-                            type="submit"
-                            disabled={!selectedFile || isLoading || authLoading}
-                            className="w-full h-12 text-base font-semibold rounded-lg shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-all duration-300 ease-in-out"
-                            size="lg"
-                        >
-                            {isLoading ? (
-                            <><Loader2 className="mr-2 h-5 w-5 animate-spin" /> Analyzing Resume</>
-                            ) : (
-                            <><Sparkles className="mr-2 h-5 w-5" /> Analyze Resume</>
-                            )}
-                        </Button>
-                    </div>
-                </form>
-            </CardContent>
-        </div> */}
-
+      
         <div className="w-fit max-w-lg mx-auto p-0 border-2 border-dashed border-blue-400 dark:border-blue-600 rounded-2xl flex flex-col items-center justify-center space-y-4 text-center m-5">
           <div className="pt-6 pb-0 px-6 text-center">
             <h2 className="text-2xl font-semibold text-slate-800 dark:text-slate-100">Upload Your Resume</h2>
@@ -817,7 +733,7 @@ export function ResumeAudit() {
       <CardFooter className="pt-8 pb-6 border-t">
         <p className="text-xs text-muted-foreground text-center w-full">
           AI analysis provides suggestions based on common best practices.
-          Review and tailor the feedback to your specific goals and industry. Prepex is not responsible for job application outcomes.
+          Review and tailor the feedback to your specific goals and industry. Career Genius is not responsible for job application outcomes.
         </p>
       </CardFooter>
     </div>

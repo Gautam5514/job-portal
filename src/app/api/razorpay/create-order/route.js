@@ -40,7 +40,7 @@ export async function POST(request) {
       notes: {
         planId: planId,
         userId: userId, // Full userId in notes for your records
-        source: "Prepex Web App"
+        source: "Career Genius Web App"
       },
     };
 

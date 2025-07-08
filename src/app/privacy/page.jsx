@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
 
       <section className="mb-8">
         <p>
-          This Privacy Policy explains how <strong> PrepX </strong> (owned and operated by Pooja Agrawal) collects,
+          This Privacy Policy explains how <strong> Career Genius </strong> (owned and operated by Pooja Agrawal) collects,
           uses, and shares information when you use our services: Resume Builder,
           Resume Analyzer, LinkedIn Profile Analysis, and Job Recommendation.
         </p>

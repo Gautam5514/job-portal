@@ -5,7 +5,7 @@ import { Star } from 'lucide-react'; // Using Star for ratings
 
 const testimonials = [
   {
-    quote: "Prepex revolutionized my job search! The AI insights helped me tailor my resume perfectly, and I landed my dream job within weeks.",
+    quote: "Career Genius revolutionized my job search! The AI insights helped me tailor my resume perfectly, and I landed my dream job within weeks.",
     name: 'Sarah L.',
     title: 'Marketing Manager',
     imageSrc: 'https://picsum.photos/100/100?random=user1',
@@ -45,7 +45,7 @@ export default function TestimonialsSection() {
             Trusted by Professionals Like You
           </h2>
           <p className="text-lg text-muted-foreground max-w-xl mx-auto">
-            See what our users are saying about their success with Prepex.
+            See what our users are saying about their success with Career Genius.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
