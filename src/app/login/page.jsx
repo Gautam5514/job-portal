@@ -71,7 +71,7 @@ export default function LoginPage() {
     } catch (err) {
        const friendlyMessage = getFirebaseErrorMessage(err);
         setError(friendlyMessage);
-        toast.err(friendlyMessage   );
+        toast.error(friendlyMessage   );
     } finally {
       setIsLoading(false);
     }
